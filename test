@@ -1,0 +1,70 @@
+module Command
+display "Command Line :",NL
+read ICommand
+if ICommand = help then
+ display "Settings : Open Settings",NL
+ display "Command : Open Command Line",NL
+ display "Help : Open Help",NL
+ display "Login : Login You Into This Web",NL
+ display "lesson : studying Math",NL
+ display "Credit : Credit All People",NL
+ display "kalkulator : calculator +/-",NL
+ Command
+else if ICommand = Login then
+display "Enter your Name",NL
+read MyName
+  display "Welcome : ",MyName " Please Enter Your Age",NL
+  display "Age: ",NL
+  read IUmur
+      display "Oh ",MyName "Your Age Is ",IUmur "Right?",NL
+   Command
+else if ICommand = lesson then
+display "Added Next Time",NL
+else if ICommand = Credit then
+display "[Credit] Made By KhdBg",NL
+display "[Credit] Knowledge By Algoritma Book",NL
+Command
+else if ICommand = kalkulator then
+display "Pick + / -",NL
+display " + = 1",NL
+display " - = 2",NL
+display "pick 1 or 2 : "
+read Math
+   if Math = 1 then
+   display "First Number : "
+   read Num1
+   display "Second Number : "
+   read Num2
+   KhdBg = Num1 + Num2
+   display "The Answer Is : ",KhdBg,NL
+   Command
+ else if Math = 2 then
+    display "First Number : "
+   read Num1
+   display "Second Number : "
+   read Num2
+   KhdBg = Num1 - Num2
+   display "The Answer Is : ",KhdBg,NL
+   else
+   display "Wrong Number Try Again"
+   Command
+   end if
+  else
+  display "Invalid Command!",NL
+  end module
+display "Get Started By Enter Command In Below",NL
+display "Try Type Help",NL
+read Started
+ if Started = help then
+    display "Settings : Open Settings",NL
+ display "Command : Open Command Line",NL
+ display "Help : Open Help",NL
+ display "Login : Login You Into This Web",NL
+ display "lessons : studying Math",NL
+ display "Credit : Credit All People",NL
+ display "Food Math : studying Food Math",NL
+ Command
+   else
+      display "Invalid Text Try Again",NL
+    Command
+      end if
